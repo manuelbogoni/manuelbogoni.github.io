@@ -9,7 +9,7 @@ body{
 .fixed-header, .fixed-footer{
     width: 100%;
     position: fixed;
-    background: #100;
+    background: #300;
     padding: 10px 0;
     color: #fff;
 }
