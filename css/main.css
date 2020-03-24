@@ -55,10 +55,7 @@ ul.posts li {
     list-style: none;
 }
 
-pre.highlight {
-  max-height: 100px; /* Change to your desired max height */
-  overflow-y: scroll;
-}
+
 
 /* Style all font awesome icons
 .fa {
