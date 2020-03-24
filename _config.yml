@@ -1,4 +1,3 @@
 name: Manuel Bogoni, Ph.D.
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-permalink: /404.html
