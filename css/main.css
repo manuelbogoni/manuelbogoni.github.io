@@ -18,10 +18,12 @@ body{
     bottom: 0;
 }
 /* Some more styles to beutify this example */
-nav a{
+.fixed-header nav a{
+    font-family:'Helvetica', 'Arial', 'Sans-Serif';
     text-decoration: none;
     padding: 7px 25px;
     display: inline-block;
+    font-weight: bold;
 }
 
 .fixed-header ul, .fixed-footer ul {
