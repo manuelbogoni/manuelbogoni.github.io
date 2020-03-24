@@ -26,9 +26,6 @@ nav a{
     padding: 7px 25px;
     display: inline-block;
 }
-.container p{
-    line-height: 200px; /* Create scrollbar to test positioning */
-}
 
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
