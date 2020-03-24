@@ -51,7 +51,9 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    color: orange;
+    font-weight: bold;
+    text-decoration: none/* underline */;
 }
 
 h1 {
