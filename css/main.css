@@ -1,6 +1,18 @@
 body {
     margin: 60px auto;
     width: 70%;
+    height: 100%;
+}
+
+.container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -100px;
+}
+
+.footer, #push {
+    height: 100px;
 }
 
 nav ul, footer ul {
