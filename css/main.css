@@ -9,7 +9,7 @@ body{
 .fixed-header, .fixed-footer{
     width: 100%;
     position: fixed;
-    padding: 10px 0;
+    padding: 10px 0px;
 }
 .fixed-header{
     top: 0;
@@ -41,6 +41,7 @@ body{
 .fixed-header ul li, .fixed-footer ul li {
     display: inline;
     margin-right: 20px;
+    list-style-type: none;
 }
 
 a {
