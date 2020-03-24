@@ -22,7 +22,10 @@ body{
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     font-weight: bold;
     text-decoration: none;
-    padding: 7px 25px;
+    padding-top: : 7px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+    padding-right: 25px;
     list-style: none;
     display: inline;
     margin-right: 20px;
