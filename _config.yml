@@ -1,3 +1,8 @@
 name: Manuel Bogoni, Ph.D.
+title: Website of Manuel Bogoni
+email: manuelbogoni@gmail.com
+description: Hydraulic engineer water resources Ph.D.
+twitter_username: ManuelBogoni
+github_username:  manuelbogoni
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
