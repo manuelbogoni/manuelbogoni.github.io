@@ -34,12 +34,7 @@ nav ul, footer ul {
     font-weight: bold;
 }
 
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-.fixed-footer ul li {
+.fixed-header, .fixed-footer ul li {
     display: inline;
     margin-right: 20px;
 }
