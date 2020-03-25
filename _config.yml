@@ -71,6 +71,9 @@ footer:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-likedin"
       url: "www.linkedin.com/in/manuelbogoni"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-likedin"
+      url: "www.linkedin.com/in/manuelbogoni"
 
 ################################
 # Theme Settings
