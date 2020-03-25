@@ -106,3 +106,12 @@ footer:
 # Theme Settings
 ################################
 permalink         : /blog/:year/:month/:day/:title
+
+################################
+# Output
+################################
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
