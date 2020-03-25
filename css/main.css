@@ -8,19 +8,20 @@ body{
     margin: 0 auto; /* Center the DIV horizontally */
 }
 
-.fixed-header, .fixed-footer{
+.fixed-header{
+    top: 0;
     width: 100%;
     position: fixed;
     padding: 20px 0px;
     background-color: #ffffff
 }
 
-.fixed-header{
-    top: 0;
-}
-
 .fixed-footer{
     bottom: 0;
+    width: 100%;
+    position: fixed;
+    padding: 10px 0px;
+    background-color: #ffffff
 }
 
 .fixed-header nav li{
