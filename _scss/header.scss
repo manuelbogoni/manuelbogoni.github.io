@@ -8,7 +8,8 @@
   background-color: #ffffff;
   top: 0;
 
-  nav li{
+  nav {
+    li{
       font-family:'Helvetica', 'Arial', 'Sans-Serif';
       font-weight: bold;
       text-decoration: none;
@@ -19,18 +20,19 @@
       list-style: none;
       display: inline;
       margin-right: 20px;
-  }
+    }
 
   ul {
       font-family:'Helvetica', 'Arial', 'Sans-Serif';
       padding: 0px;
       list-style: none;
       font-weight: bold;
-  }
 
-  ul li {
+      li {
       display: inline;
       margin-right: 20px;
       list-style-type: none;
+      }
+    }
   }
 }
