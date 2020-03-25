@@ -97,7 +97,7 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/manuelbogoni"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-likedin"
+      icon: "fa fa-likedin"
       url: "https://linkedin.com/in/manuelbogoni"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
