@@ -6,13 +6,44 @@ logo              :
 name              : Manuel Bogoni, Ph.D.
 title             : Website of Manuel Bogoni
 description       : Hydraulic engineer water resources Ph.D.
-author            : Manuel Bogoni
 email             : manuelbogoni@gmail.com
 twitter_username  : ManuelBogoni
 linkedin_username : manuelbogoni
 github_username   : manuelbogoni
 date_format       : "%-d %b %Y"
 markdown          : kramdown
+
+################################
+# Site Author
+################################
+author:
+  name             : "Manuel Bogoni"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I am an **amazing** person."
+  location         : "Somewhere"
+  email            : manuelbogoni@gmail.com
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: manuelbogoni@gmail.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      # url: "https://your-website.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/manuelbogoni"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
+      # url: "https://facebook.com/"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ManuelBogoni"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      # url: "https://instagram.com/manuelbogoni"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-instagram"
+      url: "www.linkedin.com/in/manuelbogoni"
 
 ################################
 # Theme Settings

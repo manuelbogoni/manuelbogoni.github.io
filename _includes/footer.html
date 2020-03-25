@@ -2,8 +2,20 @@
 <div class="fixed-footer">
 	<div class="container"><!-- Copyright &copy; 2020 Manuel Bogoni -->
 	    		<ul>
-	        		<li><a href="{{ email }}">Email</a></li>
-	        		<li><a href="https://github.com/{{ site.github_username }}" rel="noopener noreferrer" target="_blank">GitHub</a></li>
+
+						{% if site.author.links %}
+				      {% for link in site.author.links %}
+				        {% if link.label and link.url %}
+				          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label }}</a></li>
+				        {% endif %}
+				      {% endfor %}
+				    {% endif %}
+
+
+
+							<li> {{ site.title }} </li>
+	        		<li><a href="mailto:{{ email }}">Email</a></li>
+	        		<li><a href="https://github.com/{{ github_username }}" rel="noopener noreferrer" target="_blank">GitHub</a></li>
 							<li><a href="https://www.linkedin.com/in/{{ linkedin_username }}" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
 							<li><a href="https://twitter.com/{{ twitter_username }}" rel="noopener noreferrer" target="_blank">Twitter</a></li>
 				</ul>
