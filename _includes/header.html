@@ -1,19 +1,9 @@
 <div class="fixed-header">
     <div class="container">
         <nav>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/blog">Blog</a></li>
-          <li><a href="/boh">404</a></li>
-        </nav>
-
-        <<nav>
           {% for item in site.navigation %}
             <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}  
+          {% endfor %}
         </nav>
-
-
-
     </div>
 </div>
