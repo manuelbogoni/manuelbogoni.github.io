@@ -2,19 +2,23 @@ body{
     padding-top: 50px;
     padding-bottom: 40px;
 }
+
 .container{
     width: 80%;
     margin: 0 auto; /* Center the DIV horizontally */
 }
+
 .fixed-header, .fixed-footer{
     width: 100%;
     position: fixed;
     padding: 10px 0px;
     background-color: #ffffff
 }
+
 .fixed-header{
     top: 0;
 }
+
 .fixed-footer{
     bottom: 0;
 }
