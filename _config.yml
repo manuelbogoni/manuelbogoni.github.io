@@ -10,6 +10,19 @@ date_format       : "%-d %b %Y"
 markdown          : kramdown
 
 ################################
+# Navigation
+################################
+navigation:
+  - url   : "/"
+    title : "Home"
+  - url   : "/about"
+    title : "About"
+  - url   : "/blog"
+    title : "Blog"
+  - url   : "/boh"
+    title : "404"
+
+################################
 # My Bio
 ################################
 bio:
