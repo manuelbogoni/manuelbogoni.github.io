@@ -4,6 +4,16 @@ title: Manuel Bogoni | About me
 ---
 	<h1>About me</h1>
 
+	<div class="row">
+
+<!-- left column -->
+  <div class="column left" style="background-color:#ffffff;">
+		<img src="io_quad.JPG" alt="" width="50%">
+  </div>
+
+<!-- right column -->
+  <div class="column right" style="background-color:#ffffff;">
+
 <!-- loop over schools, if year and title are listed in config -->
 	{% if site.bio.education %}
 		<h2>Education</h2>
@@ -57,3 +67,8 @@ title: Manuel Bogoni | About me
 				{% endfor %}
 			{% endif %}
 		</p>
+
+<!-- end of right column -->
+	</div>
+
+</div>
