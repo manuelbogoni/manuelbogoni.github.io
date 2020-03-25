@@ -1,10 +1,23 @@
 <div class="fixed-header">
     <div class="container">
+<span class="left">
         <nav>
           <li><a href="/">Home</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/blog">Blog</a></li>
           <li><a href="/boh">404</a></li>
         </nav>
+</span><span class="right">
+        <ul>
+      		{% if site.footer.links %}
+      			{% for link in site.footer.links %}
+      				{% if link.label and link.url %}
+      					<li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon }} fa-2x" aria-hidden="true"></i> </a></li>
+      				{% endif %}
+      			{% endfor %}
+      		{% endif %}
+      	</ul>
+</span>
+
     </div>
 </div>
