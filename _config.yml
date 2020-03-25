@@ -10,6 +10,28 @@ date_format       : "%-d %b %Y"
 markdown          : kramdown
 
 ################################
+# My Bio
+################################
+bio:
+  education:
+    - year    : "2017"
+      title   : "Ph.D."
+      detail  : "Hydrodynamics"
+      school  : "University of Padova"
+    - year    : "2016"
+      title   : "Visiting Scholar"
+      detail  :
+      school  : "Rice University"
+    - year    : "2013"
+      title   : "M.Sc."
+      detail  : "Civil Engineering"
+      school  : "University of Padova"
+    - year    : "2010"
+      title   : "B.Sc."
+      detail  : "Civil Engineering"
+      school  : "University of Padova"
+
+################################
 # Site Author
 ################################
 author:
