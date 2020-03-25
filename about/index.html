@@ -5,9 +5,12 @@ title: Manuel Bogoni | About me
 	<h1>About me</h1>
 
 <!-- loop over schools, if year and title are listed in config -->
+	{% if site.bio.education %}
+		<h2>Education</h2>
+	{% endif %}
+	
 	<p>
 		{% if site.bio.education %}
-		<h2>Education</h2>
 			{% for edu in site.bio.education %}
 				{% if edu.year and edu.title %}
 						 <!-- year -->
