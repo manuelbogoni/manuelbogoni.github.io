@@ -113,5 +113,5 @@ permalink         : /blog/:year/:month/:day/:title
 
 # Sass/SCSS
 sass:
-  sass_dir: _sass
+  sass_dir: _scss
   style: compressed
