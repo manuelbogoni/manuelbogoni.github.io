@@ -16,7 +16,7 @@ title: Manuel Bogoni | About me
 		{% if site.bio.education %}
 			{% for edu in site.bio.education %}
 				{% if edu.year and edu.title %}
-					{{ edu.year }} | <strong>{{ edu.title }}</strong>, {{ edu.details }}, <em>{{ edu.schhol }}</em><br>
+					{{ edu.year }} | <strong>{{ edu.title }}</strong>, {{ edu.detail }}, <em>{{ edu.school }}</em><br>
 				{% endif %}
 			{% endfor %}
 		{% endif %}
