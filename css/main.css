@@ -50,6 +50,14 @@ body{
     list-style-type: none;
 }
 
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
 a {
     text-decoration: none;
     color: #999;
