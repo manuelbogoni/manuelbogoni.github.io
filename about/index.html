@@ -4,20 +4,24 @@ title: Manuel Bogoni | About me
 ---
 	<h1>About me</h1>
 
-<!-- loop over schools -->
+<!-- loop over schools, if year and title are listed in config -->
 	<p>
 		{% if site.bio.education %}
 			{% for edu in site.bio.education %}
 				{% if edu.year and edu.title %}
-						{{ edu.year }} | <!-- year -->
-						<strong>{{ edu.title }}</strong> <!-- achievement -->
-						{% if edu.detail %} <!-- detail, if exists -->
-							, {{ edu.detail }}
+						 <!-- year -->
+						{{ edu.year }} |
+						 <!-- achievement -->
+						<strong>{{ edu.title }}</strong>
+						<!-- detail, if exists -->
+						{% if edu.detail %}
+						, {{ edu.detail }}
 						{% endif %}
-						{% if edu.school %} <!-- school, if exists -->
-							, <em>{{ edu.school }}</em>
+						<!-- school, if exists -->
+						{% if edu.school %}
+						, <em>{{ edu.school }}</em>
 						{% endif %}
-					.<br>
+					  <br>
 				{% endif %}
 			{% endfor %}
 		{% endif %}
