@@ -34,15 +34,27 @@ bio:
     - year    : "2018-2020"
       title   : "Project engineer"
       detail  :
-      school  : "Studio Altieri S.p.A."
+      company  : "Studio Altieri S.p.A."
     - year    : "2017-2018"
       title   : "Postdoctoral researcher"
       detail  :
-      school  : "University of Padova"
+      company  : "University of Padova"
     - year    : "2014-2017"
       title   : "Doctoral researcher"
       detail  :
-      school  : "University of Padova"
+      company  : "University of Padova"
+    - year    : "2014-2017"
+      title   : "Doctoral researcher"
+      detail  :
+      company  : "University of Padova"
+    - year    : "2014-2017"
+      title   : "Doctoral researcher"
+      detail  :
+      company  : "University of Padova"
+    - year    : "2014-2017"
+      title   : "Doctoral researcher"
+      detail  :
+      company  : "University of Padova"
 
 ################################
 # Site Author
