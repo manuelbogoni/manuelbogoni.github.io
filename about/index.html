@@ -8,22 +8,22 @@ title: Manuel Bogoni | About me
 	{% if site.bio.education %}
 		<h2>Education</h2>
 	{% endif %}
-	
+
 	<p>
 		{% if site.bio.education %}
-			{% for edu in site.bio.education %}
-				{% if edu.year and edu.title %}
+			{% for entry in site.bio.education %}
+				{% if entry.year and entry.title %}
 						 <!-- year -->
-						{{ edu.year }} |
+						{{ entry.year }} |
 						 <!-- achievement -->
 						<strong>{{ edu.title }}</strong>
 						<!-- detail, if exists -->
-						{% if edu.detail %}
-						, {{ edu.detail }}
+						{% if entry.detail %}
+						, {{ entry.detail }}
 						{% endif %}
 						<!-- school, if exists -->
-						{% if edu.school %}
-						, <em>{{ edu.school }}</em>
+						{% if entry.school %}
+						, <em>{{ entry.school }}</em>
 						{% endif %}
 					  <br>
 				{% endif %}
@@ -31,9 +31,29 @@ title: Manuel Bogoni | About me
 		{% endif %}
 	</p>
 
-	<h2>Experience</h2>
-	<p>
-		2018-2020 | <strong>Project engineer</strong>, <em>Studio Altieri S.p.A.</em><br>
-	  2017-2018 | <strong>Postdoctoral researcher</strong>, <em>University of Padova</em><br>
-	  2014-2017 | <strong>Doctoral researcher</strong>, <em>University of Padova</em><br>
-	</p>
+	<!-- loop over experience, if year and title are listed in config -->
+		{% if site.bio.experience %}
+			<h2>Experience</h2>
+		{% endif %}
+
+		<p>
+			{% if site.bio.experience %}
+				{% for entry in site.bio.experience %}
+					{% if entry.year and entry.title %}
+							 <!-- year -->
+							{{ entry.year }} |
+							 <!-- achievement -->
+							<strong>{{ entry.title }}</strong>
+							<!-- detail, if exists -->
+							{% if entry.detail %}
+							, {{ entry.detail }}
+							{% endif %}
+							<!-- school, if exists -->
+							{% if entry.school %}
+							, <em>{{ entry.school }}</em>
+							{% endif %}
+						  <br>
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</p>
