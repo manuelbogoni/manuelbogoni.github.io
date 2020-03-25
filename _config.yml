@@ -6,10 +6,6 @@ logo              :
 name              : Manuel Bogoni, Ph.D.
 title             : Website of Manuel Bogoni
 description       : Hydraulic engineer water resources Ph.D.
-email             : manuelbogoni@gmail.com
-twitter_username  : ManuelBogoni
-linkedin_username : manuelbogoni
-github_username   : manuelbogoni
 date_format       : "%-d %b %Y"
 markdown          : kramdown
 
