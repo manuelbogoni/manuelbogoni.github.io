@@ -4,19 +4,18 @@ title: Manuel Bogoni | About me
 ---
 	<h1>About me</h1>
 
-	<h2>Education</h2>
-	<p>
-		2017 | <strong>Ph.D.</strong>, Hydrodynamics, <em>University of Padova</em><br>
-		2016 | <strong>Visiting scholar</strong>, <em>Rice University</em><br>
-	  2013 | <strong>M.Sc.</strong>, Civil Engineering, <em>University of Padova</em><br>
-	  2010 | <strong>B.Sc.</strong>, Civil Engineering, <em>University of Padova</em>
-	</p>
-
+<!-- loop over schools -->
 	<p>
 		{% if site.bio.education %}
 			{% for edu in site.bio.education %}
 				{% if edu.year and edu.title %}
-					{{ edu.year }} | <strong>{{ edu.title }}</strong>, {{ edu.detail }}, <em>{{ edu.school }}</em><br>
+						{{ edu.year }} | <!-- year -->
+						<strong>{{ edu.title }}</strong> <!-- achievement -->
+						{% if edu.detail %} <!-- detail, if exists -->
+							, {{ edu.detail }}
+						{% if edu.school %} <!-- school, if exists -->
+							, <em>{{ edu.school }}</em>
+					.<br>
 				{% endif %}
 			{% endfor %}
 		{% endif %}
