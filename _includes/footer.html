@@ -3,16 +3,26 @@
 	<div class="container"><!-- Copyright &copy; 2020 Manuel Bogoni -->
 
 <!-- loop over social links -->
-		<ul>
-			{% if site.footer.links %}
-	      {% for link in site.footer.links %}
-	        {% if link.label and link.url %}
-	          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon }} fa-2x" aria-hidden="true"></i> </a></li>
-	        {% endif %}
-	      {% endfor %}
-	    {% endif %}
-			<li>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Powered by Github Pages & Jekyll.</li>
-		</ul>
 
-	</div>
+
+
+
+<table style="width:100%">
+  <tr>
+    <td>
+			<ul>
+				{% if site.footer.links %}
+		      {% for link in site.footer.links %}
+		        {% if link.label and link.url %}
+		          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon }} fa-2x" aria-hidden="true"></i> </a></li>
+		        {% endif %}
+		      {% endfor %}
+		    {% endif %}
+			</ul>
+		</td>
+    <td>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. Powered by Github Pages & Jekyll.</td>
+  </tr>
+</table>
+
+</div>
 </div>
