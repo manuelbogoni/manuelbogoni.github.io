@@ -48,7 +48,7 @@ author:
 ################################
 # Site Footer
 ################################
-fotter:
+footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
