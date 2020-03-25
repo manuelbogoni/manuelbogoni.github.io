@@ -2,7 +2,6 @@
 <div class="fixed-footer">
 	<div class="container"><!-- Copyright &copy; 2020 Manuel Bogoni -->
 	    		<ul>
-
 						{% if site.author.links %}
 				      {% for link in site.author.links %}
 				        {% if link.label and link.url %}
@@ -10,14 +9,6 @@
 				        {% endif %}
 				      {% endfor %}
 				    {% endif %}
-
-
-
-							<li> {{ site.title }} </li>
-	        		<li><a href="mailto:{{ email }}">Email</a></li>
-	        		<li><a href="https://github.com/{{ github_username }}" rel="noopener noreferrer" target="_blank">GitHub</a></li>
-							<li><a href="https://www.linkedin.com/in/{{ linkedin_username }}" rel="noopener noreferrer" target="_blank">LinkedIn</a></li>
-							<li><a href="https://twitter.com/{{ twitter_username }}" rel="noopener noreferrer" target="_blank">Twitter</a></li>
 				</ul>
 </div>
 </div>
