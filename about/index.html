@@ -13,8 +13,10 @@ title: Manuel Bogoni | About me
 						<strong>{{ edu.title }}</strong> <!-- achievement -->
 						{% if edu.detail %} <!-- detail, if exists -->
 							, {{ edu.detail }}
+						{% endif %}
 						{% if edu.school %} <!-- school, if exists -->
 							, <em>{{ edu.school }}</em>
+						{% endif %}
 					.<br>
 				{% endif %}
 			{% endfor %}
