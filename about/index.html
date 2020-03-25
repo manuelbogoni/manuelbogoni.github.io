@@ -12,15 +12,15 @@ title: Manuel Bogoni | About me
 	  2010 | <strong>B.Sc.</strong>, Civil Engineering, <em>University of Padova</em>
 	</p>
 
-	<ul>
+	<p>
 		{% if site.bio.education %}
 			{% for edu in site.bio.education %}
 				{% if edu.year and edu.title %}
-					<li>{{ edu.year }} | <strong>{{ edu.title }}</strong>, {{ edu.details }}, <em>{{ edu.schhol }}</em></li>
-					{% endif %}
+					{{ edu.year }} | <strong>{{ edu.title }}</strong>, {{ edu.details }}, <em>{{ edu.schhol }}</em><br>
+				{% endif %}
 			{% endfor %}
 		{% endif %}
-	</ul>
+	</p>
 
 	<h2>Experience</h2>
 	<p>
