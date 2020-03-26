@@ -2,67 +2,110 @@
 layout: default
 title: Manuel Bogoni | About me
 ---
+
+<!-- page container -->
+<div class="container">
+
+<!-- title -->
 	<h1>About me</h1>
 
-	<div class="row">
-
 <!-- left column -->
-  <div class="column left" style="background-color:#ffffff;">
-		<img src="io_quad.JPG" alt="" width="50%">
-  </div>
+	<div class="about-left" >
+
+<!-- image -->
+		<img src="io_quad.JPG" alt="" width="30%">
+		<h4>{{ site.name }}</h4>
+
+<!-- contact list -->
+		<div class="contact-list">
+
+<!-- loop over social -->
+		  <ul>
+		    {% if site.author.links %}
+		      {% for item in site.author.links %}
+		        {% if item.label and item.url %}
+		          <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer" target="_blank">
+		            <i class="{{ item.icon }} fa-2x" aria-hidden="true" style=" vertical-align: middle;"></i>
+							</a></li>
+		        {% endif %}
+		      {% endfor %}
+		    {% endif %}
+		  </ul>
+
+<!-- end of contact list -->
+		</div>
+
+<!-- end left column -->
+	</div>
 
 <!-- right column -->
-  <div class="column right" style="background-color:#ffffff;">
+	<div class="about-right">
+
+<!-- title, if education is in config -->
+		{% if site.bio.education %}
+			<h3>Education</h3>
+		{% endif %}
 
 <!-- loop over schools, if year and title are listed in config -->
-	{% if site.bio.education %}
-		<h2>Education</h2>
-	{% endif %}
+		<p>
+			{% if site.bio.education %}
+				{% for entry in site.bio.education %}
+					{% if entry.year and entry.title %}
 
-	<p>
-		{% if site.bio.education %}
-			{% for entry in site.bio.education %}
-				{% if entry.year and entry.title %}
-						 <!-- year -->
+<!-- year -->
 						{{ entry.year }} |
-						 <!-- achievement -->
+
+<!-- achievement -->
 						<strong>{{ entry.title }}</strong>
-						<!-- detail, if exists -->
+
+<!-- detail, if exists -->
 						{% if entry.detail %}
 						, {{ entry.detail }}
 						{% endif %}
-						<!-- school, if exists -->
+
+<!-- school, if exists -->
 						{% if entry.school %}
 						, <em>{{ entry.school }}</em>
 						{% endif %}
-					  <br>
-				{% endif %}
-			{% endfor %}
-		{% endif %}
-	</p>
 
-	<!-- loop over experience, if year and title are listed in config -->
+<!-- break line -->
+						 <br>
+
+					{% endif %}
+				{% endfor %}
+			{% endif %}
+		</p>
+
+<!-- ltitle, if experience is listed in config -->
 		{% if site.bio.experience %}
-			<h2>Experience</h2>
+			<h3>Experience</h3>
 		{% endif %}
 
+<!-- loop over experience, if year and title are listed in config -->
 		<p>
 			{% if site.bio.experience %}
 				{% for entry in site.bio.experience %}
 					{% if entry.year and entry.title %}
-							 <!-- year -->
-							{{ entry.year }} |
-							 <!-- achievement -->
-							<strong>{{ entry.title }}</strong>
-							<!-- detail, if exists -->
-							{% if entry.detail %}
-							, {{ entry.detail }}
-							{% endif %}
-							<!-- school, if exists -->
-							{% if entry.company %}
-							, <em>{{ entry.company }}</em>
-							{% endif %}
-						  <br>
+
+<!-- year -->
+						{{ entry.year }} |
+
+<!-- achievement -->
+						<strong>{{ entry.title }}</strong>
+
+<!-- detail, if exists -->
+						{% if entry.detail %}
+						, {{ entry.detail }}
+						{% endif %}
+
+<!-- school, if exists -->
+						{% if entry.company %}
+						, <em>{{ entry.company }}</em>
+						{% endif %}
+
+<!-- break line -->
+					  <br>
+
 					{% endif %}
 				{% endfor %}
 			{% endif %}
@@ -71,4 +114,9 @@ title: Manuel Bogoni | About me
 <!-- end of right column -->
 	</div>
 
+<!-- end columns -->
+	<div class="row">
+	</div>
+
+<!-- end of page container -->
 </div>

@@ -1,11 +1,22 @@
+<!-- HEADER -->
 <div class="fixed-header">
-    <div class="container">
 
-        <nav>
-          {% for item in site.navigation %}
-            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
-          {% endfor %}
-      	</nav>
+<!-- page container -->
+  <div class="container">
 
-    </div>
+<!-- navigation bar: loop over items in config -->
+    <nav>
+      {% for item in site.navigation %}
+        <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer">
+					{{ item.title }}</a></li>
+      {% endfor %}
+  	</nav>
+
+<!-- horizontal line -->
+    <hr>
+
+<!-- end of page container -->
+  </div>
+
+<!-- end of header -->
 </div>

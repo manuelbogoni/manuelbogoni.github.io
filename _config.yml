@@ -3,10 +3,13 @@
 ################################
 lang              : "en"
 logo              :
-name              : Manuel Bogoni, Ph.D.
+name              : Manuel Bogoni
+nametile          : Manuel Bogoni, Ph.D.
 title             : Website of Manuel Bogoni
 description       : Hydraulic engineer water resources Ph.D.
 date_format       : "%-d %b %Y"
+
+# Build settings
 markdown          : kramdown
 
 ################################
@@ -14,13 +17,15 @@ markdown          : kramdown
 ################################
 navigation:
   - url   : "/"
-    title : "Home"
+    title : "HOME"
+    icon  : "fa fa-home"
   - url   : "/about"
-    title : "About"
+    title : "ABOUT"
+    icon  : "fa fa-user-o"
   - url   : "/blog"
-    title : "Blog"
-  - url   : "/boh"
-    title : "404"
+    title : "BLOG"
+  - url   : "/contact"
+    title : "CONTACT"
 
 ################################
 # My Bio
@@ -68,25 +73,25 @@ author:
   email            : manuelbogoni@gmail.com
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fa fa-envelope-o"
       url: mailto:manuelbogoni@gmail.com
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fa fa-link"
       # url: "https://your-website.com"
     - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
+      icon: "fa fa-facebook"
       # url: "https://facebook.com/"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
+      icon: "fa fa-twitter"
       url: "https://twitter.com/manuelbogoni"
     - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+      icon: "fa fa-instagram"
       url: "https://instagram.com/manuelbogoni"
     - label: "LinkedIn"
-      icon: "fab fa-fw fa-likedin"
+      icon: "fa fa-linkedin"
       url: "https://linkedin.com/in/manuelbogoni"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+      icon: "fa fa-github"
       url: "https://github.com/ManuelBogoni"
 
 ################################
@@ -95,16 +100,16 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fa fa-envelope-square"
+      icon: "fa fa-envelope-o"
       url: mailto:manuelbogoni@gmail.com
     - label: "Website"
       icon: "fa fa-link"
       # url: "https://your-website.com"
     - label: "Facebook"
-      icon: "fa fa-facebook-square"
+      icon: "fa fa-facebook"
       # url: "https://facebook.com/"
     - label: "Twitter"
-      icon: "fa fa-twitter-square"
+      icon: "fa fa-twitter"
       url: "https://twitter.com/manuelbogoni"
     - label: "Instagram"
       icon: "fa fa-instagram"
@@ -119,7 +124,7 @@ footer:
 ################################
 # Theme Settings
 ################################
-permalink         : /blog/:year/:month/:day/:title
+permalink: /:categories/:year/:month/:day/:title/
 
 ################################
 # Output
