@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-	<html>
+<html>
 
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<!-- <link rel="stylesheet" type="text/css" href="/css/main.css"> -->
-			<link rel="stylesheet" type="text/scss" href="/css/main.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"">-->
+<!-- head data-->
+	{% include head.html %}
 
-			<meta name="description" content="Personal website of Manuel Bogoni, Ph.D., water resources engineer">
-		</head>
+	<body>
 
-		<body>
+<!-- header-->
+		{% include header.html %}
 
-<!-- upper navigation-->
-			{% include header.html %}
+<!-- navigation bar-->
+		{% include navigation_bar.html %}
 
 <!-- container -->
-			<div class="container">
-			{{ content }}
-			<div id="push"> </div>
-			</div>
+		<div class="container">
+		{{ content }}
+		<div id="push"> </div>
+		</div>
 
 <!-- footer-->
-			{% include footer.html %}
+		{% include footer.html %}
 
-		</body>
-	</html>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+
+// global variables and settings
+@import "global";
+
+// types and fonts
+@import "fonts";
+
+// main structure of the site
+@import "layout";
+
+// definition of local structures
+@import "header";
+@import "navbar";
+@import "footer";
+@import "base";
+// @import "code";

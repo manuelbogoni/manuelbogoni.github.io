@@ -1,8 +1,10 @@
 ################################
-# Site Settings
+# DATA
 ################################
 lang              : "en"
 logo              :
+# url:              : https://github.com/manuelbogoni/manuelbogoni.github.io
+# baseurl:          : manuelbogoni.github.io
 name              : Manuel Bogoni
 nametile          : Manuel Bogoni, Ph.D.
 title             : Website of Manuel Bogoni
@@ -13,7 +15,7 @@ date_format       : "%-d %b %Y"
 markdown          : kramdown
 
 ################################
-# Navigation
+# NAVIGATION
 ################################
 navigation:
   - url   : "/"
@@ -28,7 +30,7 @@ navigation:
     title : "CONTACT"
 
 ################################
-# My Bio
+# MY BIO
 ################################
 bio:
   education:
@@ -63,7 +65,7 @@ bio:
       company  : "University of Padova"
 
 ################################
-# Site Author
+# SITE AUTHOR
 ################################
 author:
   name             : "Manuel Bogoni"
@@ -95,7 +97,7 @@ author:
       url: "https://github.com/ManuelBogoni"
 
 ################################
-# Site Footer
+# SITE FOOTER
 ################################
 footer:
   links:
@@ -122,15 +124,22 @@ footer:
       url: "https://github.com/ManuelBogoni"
 
 ################################
-# Theme Settings
+# SETTINGS
 ################################
-permalink: /:categories/:year/:month/:day/:title/
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# relative_permalinks: true
+
+paginate: 2
+paginate_path: "/blog/page:num/"
 
 ################################
-# Output
+# LAYOUT
 ################################
-
-# Sass/SCSS
 sass:
-  sass_dir: _scss
-  style: compressed
+  sass_dir: css/_scss
+  style: :compressed
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-paginate

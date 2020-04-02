@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Manuel Bogoni | About me
+title: About me
 ---
 
 <!-- page container -->
@@ -13,7 +13,7 @@ title: Manuel Bogoni | About me
 	<div class="about-left" >
 
 <!-- image -->
-		<img src="io_quad.JPG" alt="" width="30%">
+		<img src="io_quad.JPG" alt="" width="20%">
 		<h4>{{ site.name }}</h4>
 
 <!-- contact list -->
@@ -23,11 +23,13 @@ title: Manuel Bogoni | About me
 		  <ul>
 		    {% if site.author.links %}
 		      {% for item in site.author.links %}
+
 		        {% if item.label and item.url %}
 		          <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer" target="_blank">
 		            <i class="{{ item.icon }} fa-2x" aria-hidden="true" style=" vertical-align: middle;"></i>
 							</a></li>
 		        {% endif %}
+
 		      {% endfor %}
 		    {% endif %}
 		  </ul>

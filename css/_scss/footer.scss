@@ -1,0 +1,24 @@
+.footer{
+  background-color: $theme-color-2;
+  text-align: center;
+  color: $footer-color;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      margin-right: 20px;
+    }
+  }
+}
+
+// Responsive layout:
+// when the screen is less than 400px wide, make the navigation links
+// stack on top f each other instead of next to each other.
+@media screen and (max-width: 400px) {
+  .footer ul {
+    float: none;
+    width: 100%;
+  }
+}
