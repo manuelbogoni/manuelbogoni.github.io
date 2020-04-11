@@ -175,7 +175,7 @@ a {
 .about-me-container {
   @include flexbox; // to set the element as container
   @include flex-direction(row); // inner element sorting
-  @include flex-shrink(0) // to prevent shrink
+  @include flex-shrink(0); // to prevent shrink
   justify-content: space-evenly;
   align-items: flex-start;
 }
