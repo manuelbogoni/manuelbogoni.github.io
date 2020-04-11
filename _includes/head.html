@@ -7,19 +7,25 @@
 <!-- page titles -->
   <title>
     {% if page.title == "Home" %}
-      &middot; {{ site.title }} &middot; {{ site.tagline }}
+      &middot; {{ site.title }} &middot;
     {% else %}
-      {{ page.title }} &middot; {{ site.title }}
+      {{ site.title }} &middot; {{ page.title }}
     {% endif %}
   </title>
 
   <meta name="description" content="Personal website of Manuel Bogoni, Ph.D., water resources engineer">
 
+<!-- CSS -->
+  <link rel="stylesheet" href={{ "/css/styles.css" | relative_url }}>
+
+<!-- Google fonts -->
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cabin" />
+
 <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<!-- CSS -->
-  <link rel="stylesheet" href="../css/styles.css">
+<!-- charts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}atom.xml">

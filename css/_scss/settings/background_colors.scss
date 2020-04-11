@@ -1,0 +1,41 @@
+//----------------------------------------------------------------------
+// BACKGROUND COLORS
+//----------------------------------------------------------------------
+
+body {
+	@if variable-exists(page-color) {
+		background-color: $page-color;
+	} @else {
+		background: white;
+	}
+}
+
+#header {
+	@if variable-exists(header-color) {
+		background-color: $header-color;
+	} @else if variable-exists(page-color) {
+		background-color: $page-color;
+	} @else {
+		background: white;
+	}
+}
+
+#navigation-bar {
+	@if variable-exists(navbar-color) {
+		background-color: $navbar-color;
+	} @else if variable-exists(page-color) {
+		background-color: $page-color;
+	} @else {
+		background: white;
+	}
+}
+
+#footer {
+	@if variable-exists(footer-color) {
+		background-color: $footer-color;
+	} @else if variable-exists(page-color) {
+		background-color: $page-color;
+	} @else {
+		background: white;
+	}
+}

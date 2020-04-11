@@ -1,0 +1,28 @@
+---
+layout: default
+title: Contact me
+---
+
+<!-- page container -->
+<div class="container">
+
+<!-- title -->
+  <h1>Contact me</h1 >
+
+
+<!-- loop over social -->
+{% if site.author.social-media %}
+  {% for item in site.author.social-media %}
+    {% if item.label and item.url %}
+        <a href="{{ item.url }}" class="color-social-button-{{ item.label }} RoundButton" ></a>
+          {{ item.nickname }}
+        <a href="{{ item.url }}" class="social-icon-{{ item.label }} ColoredIcons" ></a>
+
+        <a href="{{ item.url }}" class="social-icon-{{ item.label }} BlackIcons" ></a>
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+
+<!-- end of page container -->
+</div>

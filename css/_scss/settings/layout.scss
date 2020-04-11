@@ -1,0 +1,33 @@
+//----------------------------------------------------------------------
+// BASE LAYOUT: HEADER, NAVIGATION BAR, CONTAINER, FOOTER
+//----------------------------------------------------------------------
+
+// box-sizing includes the padding and border in total width and height
+* {box-sizing: border-box;}
+
+// basic layout
+html, body {
+  height     : 100%; // important !
+  margin     : 0;
+  padding    : 0;
+  display    : inline-block;
+}
+
+// body is a flexbox container
+body{
+  @include flexbox; // to set the element as container
+  @include flex-direction(column); // inner element sorting
+  min-height: 100hv; // important !
+}
+
+// navigation bar and footer are upper and lower flexbox containers
+#navigation-bar, #footer{
+  @include flexbox; // to set the element as container
+  @include flex-direction(row); // inner element sorting
+  @include flex-shrink(0); // to prevent shrink
+}
+
+// container is the central flexbox item
+#container {
+  @include flex-grow(1); // to allow growth
+}

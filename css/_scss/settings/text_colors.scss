@@ -1,0 +1,41 @@
+//----------------------------------------------------------------------
+// TEXT COLORS
+//----------------------------------------------------------------------
+
+body {
+	@if variable-exists(font-color) {
+		color: $font-color;
+	} @else {
+		color: black;
+	}
+}
+
+#header {
+	@if variable-exists(header-text-color) {
+		color: $header-text-color;
+	} @else if variable-exists(font-color) {
+		color: $font-color;
+	} @else {
+		color: black;
+	}
+}
+
+#navigation-bar {
+	@if variable-exists(navbar-text-color) {
+		color: $navbar-text-color;
+	} @else if variable-exists(font-color) {
+		color: $font-color;
+	} @else {
+		color: black;
+	}
+}
+
+#footer {
+	@if variable-exists(footer-text-color) {
+		color: $footer-text-color;
+	} @else if variable-exists(font-color) {
+		color: $font-color;
+	} @else {
+		color: black;
+	}
+}

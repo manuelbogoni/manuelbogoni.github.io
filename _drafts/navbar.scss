@@ -1,0 +1,23 @@
+// LAYOUT INSIDE NAVIGATION BAR
+
+.navbar{
+width: 100%;
+
+  nav li{
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    display: inline;
+    margin-right: 3%;
+      }
+    }
+
+// Responsive layout:
+// when the screen is less than 400px wide, make the navigation links
+// stack on top f each other instead of next to each other.
+@media screen and (max-width: 400px) {
+  .navbar li {
+    float: none;
+    width: 100%;
+  }
+}

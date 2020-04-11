@@ -16,5 +16,14 @@ title: Posts
 	  {% endfor %}
 	</ul>
 
+	<!-- loop over posts -->
+	<div class="post-box">
+		  {% for post in site.posts %}
+			<div class="post-item">
+				<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</div>
+		  {% endfor %}
+			</div>
+
 <!-- end of page container -->
 </div>

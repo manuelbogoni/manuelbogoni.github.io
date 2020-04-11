@@ -1,145 +1,163 @@
-################################
-# DATA
-################################
-lang              : "en"
-logo              :
-# url:              : https://github.com/manuelbogoni/manuelbogoni.github.io
-# baseurl:          : manuelbogoni.github.io
-name              : Manuel Bogoni
-nametile          : Manuel Bogoni, Ph.D.
-title             : Website of Manuel Bogoni
-description       : Hydraulic engineer water resources Ph.D.
-date_format       : "%-d %b %Y"
+# --- GENERAL WEBSITE OPTIONS --- #
 
-# Build settings
-markdown          : kramdown
+# name of website
+title: "My website"
 
-################################
-# NAVIGATION
-################################
+# how to display the link to the website in the footer
+url-pretty: "MyWebsite.com"
+
+# short description of website
+description: "A virtual proof that I'm awesome"
+
+# website language
+language: "en"
+
+# website logo
+# logo:
+
+# date format
+date_format: "%-d %b %Y"
+
+# --- LOCAL DEVELOPMENT OPTIONS --- #
+# If the website is hosted locally rather than on GitHub, the next two
+# parameters to set the url and baseurl need to be uncommented
+
+# url is the the website domain URL without a trailing slash
+#url: "https://example.com"
+
+# baseurl should be an empty string
+#baseurl: ""
+
+# --- NAVIGATION BAR --- #
 navigation:
   - url   : "/"
-    title : "HOME"
-    icon  : "fa fa-home"
+    title : "home"
   - url   : "/about"
-    title : "ABOUT"
-    icon  : "fa fa-user-o"
+    title : "about"
   - url   : "/blog"
-    title : "BLOG"
+    title : "blog"
   - url   : "/contact"
-    title : "CONTACT"
+    title : "contact"
 
-################################
-# MY BIO
-################################
-bio:
+# --- PERSONAL DATA --- #
+author:
+# name, surname, and title
+  name     : "Manuel"
+  surname  : "Bogoni"
+  title    : "Ph.D."
+
+# current location
+  location : "Padova"
+
+# short bio
+  shortbio : "M.Sc.Eng., Ph.D."
+
+# long bio
+  longbio  : "M.sc. in Civil Engineering, Ph.D. in Hydrodynamics. Former
+  researcher at the University of Padova and project engineer."
+
+# photo
+  avatar   : "/figures/io_quad.JPG"
+
+# education track (year, title, subject, school, details)
   education:
     - year    : "2017"
       title   : "Ph.D."
-      detail  : "Hydrodynamics"
+      subject : "Hydrodynamics"
       school  : "University of Padova"
+      #details : "Long-term evolution of meandering rivers, supervisor Prof. Stefano Lanzoni"
     - year    : "2016"
       title   : "Visiting Scholar"
-      detail  :
+      subject : "Geomorphology"
       school  : "Rice University"
+      #details : "Earth Science Department, supervisor Dr. Jeffrey A. Nittrouer"
     - year    : "2013"
       title   : "M.Sc."
-      detail  : "Civil Engineering"
+      subject : "Civil Engineering"
       school  : "University of Padova"
+      #details : ""
     - year    : "2010"
       title   : "B.Sc."
-      detail  : "Civil Engineering"
+      subject : "Civil Engineering"
       school  : "University of Padova"
+      #details : ""
+
+# experience track (year, title, company, details)
   experience:
     - year    : "2018-2020"
       title   : "Project engineer"
-      detail  :
-      company  : "Studio Altieri S.p.A."
+      company : "Studio Altieri S.p.A."
+      details : "Design, advisory, project management"
     - year    : "2017-2018"
       title   : "Postdoctoral researcher"
-      detail  :
-      company  : "University of Padova"
+      company : "University of Padova"
+      details : "Numerical modeling, data analysis"
     - year    : "2014-2017"
       title   : "Doctoral researcher"
-      detail  :
-      company  : "University of Padova"
+      company : "University of Padova"
+      details : "Numerical modeling, data analysis"
 
-################################
-# SITE AUTHOR
-################################
-author:
-  name             : "Manuel Bogoni"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            : manuelbogoni@gmail.com
-  links:
-    - label: "Email"
-      icon: "fa fa-envelope-o"
-      url: mailto:manuelbogoni@gmail.com
-    - label: "Website"
-      icon: "fa fa-link"
-      # url: "https://your-website.com"
-    - label: "Facebook"
-      icon: "fa fa-facebook"
-      # url: "https://facebook.com/"
-    - label: "Twitter"
-      icon: "fa fa-twitter"
-      url: "https://twitter.com/manuelbogoni"
-    - label: "Instagram"
-      icon: "fa fa-instagram"
-      url: "https://instagram.com/manuelbogoni"
-    - label: "LinkedIn"
-      icon: "fa fa-linkedin"
-      url: "https://linkedin.com/in/manuelbogoni"
-    - label: "GitHub"
-      icon: "fa fa-github"
-      url: "https://github.com/ManuelBogoni"
+# skills
+  skills:
+    - title   : "Numerical modeling"
+      details : "Numerical simulations of meandering rivers"
+      figure  : "/figures/river_with_oxbow_lakes.png"
+    - title   : "Statistics"
+      details : "Numerical simulations of meandering rivers"
+      figure  : "/figures/statistics_natural_rivers.png"
+    - title   : "Multivariate analysis"
+      details : "Numerical simulations of meandering rivers"
+      figure  : "/figures/multivariate_analysis.png"
+    - title   : "Hydrology"
+      details : "Numerical simulations of meandering rivers"
+      figure  : "/figures/kriging.png"
 
-################################
-# SITE FOOTER
-################################
-footer:
-  links:
-    - label: "Email"
-      icon: "fa fa-envelope-o"
-      url: mailto:manuelbogoni@gmail.com
-    - label: "Website"
-      icon: "fa fa-link"
-      # url: "https://your-website.com"
-    - label: "Facebook"
-      icon: "fa fa-facebook"
-      # url: "https://facebook.com/"
-    - label: "Twitter"
-      icon: "fa fa-twitter"
-      url: "https://twitter.com/manuelbogoni"
-    - label: "Instagram"
-      icon: "fa fa-instagram"
-      url: "https://instagram.com/manuelbogoni"
-    - label: "LinkedIn"
-      icon: "fa fa-linkedin"
-      url: "https://linkedin.com/in/manuelbogoni"
-    - label: "GitHub"
-      icon: "fa fa-github"
-      url: "https://github.com/ManuelBogoni"
+# social media links (label, nickname, url)
+  social-media:
+    - label    : "email"
+      #nickname : ""
+      url      : mailto:manuelbogoni@gmail.com
+    - label    : "internet"
+      url      : https://your-website.com
+    - label    : "facebook"
+      #url      : "https://facebook.com/"
+    - label    : "twitter"
+      nickname : "@ManuelBogoni"
+      url      : "https://twitter.com/manuelbogoni"
+    - label    : "instagram"
+      nickname : "@manuelbogoni"
+      url      : "https://instagram.com/manuelbogoni"
+    - label    : "linkedin"
+      #nickname : ""
+      url      : "https://linkedin.com/in/manuelbogoni"
+    - label    : "github"
+      nickname : "@ManuelBogoni"
+      url      : "https://github.com/ManuelBogoni"
 
-################################
-# SETTINGS
-################################
-# Use of `relative_permalinks` ensures post links from the index work properly.
-permalink:           pretty
+# --- SETTINGS --- #
+
+# `relative_permalinks` ensures post links from the index work properly.
+permalink: pretty
 # relative_permalinks: true
 
-paginate: 2
+paginate: 5
 paginate_path: "/blog/page:num/"
 
-################################
-# LAYOUT
-################################
+# layout setting
 sass:
   sass_dir: css/_scss
   style: :compressed
 
+# plugins
 plugins:
   - jekyll-coffeescript
   - jekyll-paginate
+  - jekyll-sitemap
+
+# files included from production site
+include: ['_pages']
+
+# files excluded from production site
+exclude:
+  - github
+  - jeckyll

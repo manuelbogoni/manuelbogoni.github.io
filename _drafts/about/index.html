@@ -1,0 +1,181 @@
+---
+layout    : default
+title     : About me
+permalink : /about/
+---
+
+<!-- page container -->
+<div class="container">
+
+<!-- 'about-me' container' -->
+	<div class="about-me-container">
+
+<!-- left column -->
+		<div class="about-me-left-column align-justify" >
+
+		<!-- title: name -->
+		<div class="title-box">
+			<h4>{{ site.author.name }} {{ site.author.surname }}</h4>
+		</div>
+
+<!-- author image -->
+		<img src="{{ site.author.avatar }}" alt="{{ site.author.name}} {{ site.author.surname}}" width="150px" class="img-round">
+		<h4>{{ site.name }} <div class="pin"</div> {{ site.author.location }} </h4>
+			{{ site.author.shortbio }}
+
+			<p>{{ site.author.longbio }}</p>
+
+<!-- loop over social -->
+		{% if site.author.social-media %}
+			{% for item in site.author.social-media %}
+				{% if item.label and item.url %}
+				<a href="{{ item.url }}" class="social-icon-{{ item.label }} BlackIcons" ></a>
+				{% endif %}
+			{% endfor %}
+		{% endif %}
+
+<!-- end left column -->
+		</div>
+
+		<!-- right column -->
+				<div class="about-me-right-column align-left" >
+
+<!-- EDUCATION -->
+		{% if site.author.education %}
+			<div class="about-me-section">
+
+<!-- title -->
+				<div class="about-me-section-title">
+					<h6><span class="graduationcap"</span> Education </h6>
+				</div>
+
+<!-- loop over schools, if year and title are listed in config -->
+<table>
+				{% for entry in site.author.education %}
+				<tr>
+					{% if entry.year and entry.title %}
+
+<!-- year -->
+					<td>	{{ entry.year }} </td><td>
+
+<!-- achievement -->
+						<strong>{{ entry.title }}</strong>
+
+<!-- subject, if exists -->
+						{% if entry.subject %}
+						, {{ entry.subject }}
+						{% endif %}
+
+<!-- school, if exists -->
+						{% if entry.school %}
+						, <em>{{ entry.school }}</em>
+						{% endif %}
+
+<!-- details, if exist -->
+						{% if entry.details %}
+						</td></tr><td></td><td>	{{ entry.details }}
+						{% endif %}
+
+						</td>
+
+<!-- break line -->
+		<!--			 	<br> -->
+
+					{% endif %}
+					</tr>
+				{% endfor %}
+		</table>
+		{% endif %}
+
+					</div>
+
+<!-- EXPERIENCE -->
+		{% if site.author.experience %}
+			<div class="about-me-section">
+
+<!-- title -->
+				<div class="about-me-section-title">
+					<h6><span class="briefcase"</span> Experience </h6>
+				</div>
+
+<!-- loop over experience, if year and title are listed in config -->
+<table>
+				{% for entry in site.author.experience %}
+				<tr>
+					{% if entry.year and entry.title %}
+
+<!-- year -->
+						<td>	{{ entry.year }} </td><td>
+
+<!-- position -->
+						<strong>{{ entry.title }}</strong>
+
+<!-- company, if exists -->
+						{% if entry.company %}
+						, <em>{{ entry.company }}</em>
+						{% endif %}
+
+<!-- details, if exists -->
+						{% if entry.details %}
+							</td></tr><td></td><td>	{{ entry.details }}
+						{% endif %}
+
+						</td>
+
+<!-- break line -->
+				 <!-- 	<br>-->
+
+					{% endif %}
+				{% endfor %}
+</table>
+			</div>
+		{% endif %}
+
+<!-- SKILLS -->
+		{% if site.author.skills %}
+			<div class="about-me-section">
+
+<!-- title -->
+				<div class="about-me-section-title">
+					<h6><span class="cogs"</span> Skills </h6>
+				</div>
+
+				<div class="post-box">
+
+<!-- loop over schools, if year and title are listed in config -->
+					{% for entry in site.author.skills %}
+						{% if entry.title %}
+
+							<div class="skill-item align-center">
+
+<!-- achievement -->
+								<strong>{{ entry.title }}</strong>
+
+<!-- details, if exist -->
+								{% if entry.details %}
+									<br> {{ entry.details }}
+								{% endif %}
+
+<!-- figure, if exists -->
+								{% if entry.figure %}
+									<br> <img src="{{ entry.figure }}" alt="me" width="90%">
+								{% endif %}
+
+							</div>
+
+						{% endif %}
+					{% endfor %}
+
+				</div>
+			</div>
+		{% endif %}
+
+<!-- end of right column -->
+	</div>
+		</div>
+
+<!-- end of 'about-me' container' -->
+
+
+<!-- end of page container -->
+</div>

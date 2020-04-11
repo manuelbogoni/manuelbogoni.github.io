@@ -2,20 +2,25 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 
-// global variables and settings
-@import "global";
+// database
+@import "database/mixin";
+@import "database/alignments";
+@import "database/colors";
+@import "database/floats";
+@import "database/font_sizes";
+@import "database/font_weights";
+@import "database/social_icons";
 
-// types and fonts
-@import "fonts";
+// variables
+@import "variables";
 
-// main structure of the site
-@import "layout";
+// general layout
+@import "settings/layout";
 
-// definition of local structures
-@import "header";
-@import "navbar";
-@import "footer";
-@import "base";
-// @import "code";
+// colors
+@import "settings/background_colors";
+@import "settings/text_colors";
+@import "specific_settings";
 
-@import "boostrap-social"
+// visualization for tablet and phone screens
+@import "database/media_screens";

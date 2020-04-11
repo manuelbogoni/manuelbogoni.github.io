@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<h2>{{ page.title }}</h2>
+
+<img class="rounded-corner" src="{{ page.figure }}" alt="me">
+
+<!-- loop over social networks -->
+{% if site.author.social-media %}
+	{% for item in site.author.social-media %}
+		{% if item.label and item.url %}
+		    <a href="{{ item.url }}" class="social-icon-{{ item.label }} BlackIcons" ></a>
+		{% endif %}
+	{% endfor %}
+{% endif %}
+
+<!-- container -->
+<div class="container align-justify">
+	{{ content }}
+</div>

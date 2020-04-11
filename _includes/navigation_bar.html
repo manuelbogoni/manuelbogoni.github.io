@@ -1,13 +1,21 @@
 <!-- NAVIGATION BAR -->
-<div class="navbar">
+<div id="navigation-bar">
 
-<!-- navigation bar: loop over items in config -->
-    <nav>
-      {% for item in site.navigation %}
-        <li><a href="{{ item.url }}" rel="nofollow noopener noreferrer">
-					{{ item.title }}</a></li>
-      {% endfor %}
-  	</nav>
+  <div class="box">
+    {{ site.title }}
+  </div>
+
+  <div class="box align-right align-bottom">
+
+<!-- loop over items in config -->
+      <nav>
+        {% for item in site.navigation %}
+          <a href="{{ item.url }}" rel="nofollow noopener noreferrer">
+  					{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+
+    </div>
 
 <!-- end of navigation bar -->
 </div>

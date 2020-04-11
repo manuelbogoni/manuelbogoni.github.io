@@ -1,33 +1,18 @@
 <!-- FOOTER -->
-<div class="footer">
+<div id="footer">
 
-<!-- horizontal line -->
-<!--		<hr>	-->
+<!-- footer element -->
+	<div class="box align-center percent-font-size-60">
 
-<!-- loop over social links -->
-		<div class="left">
-			<ul>
-				{% if site.footer.links %}
-					{% for item in site.footer.links %}
-						{% if item.label and item.url %}
-							<li><a href="{{ item.url }}" rel="nofollow noopener noreferrer">
-								<i class="{{ item.icon }} fa-2x" aria-hidden="true"></i> </a></li>
-						{% endif %}
-					{% endfor %}
-				{% endif %}
-			</ul>
-		</div>
+		<!-- copyright -->
+		&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} {{ site.author.surname }}.
+		Powered with
+		<a href="https://pages.github.com" rel="nofollow">GitHub Pages</a>
+		&amp
+		<a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>.
 
-<!-- copyright -->
-		<div class="right">
-			&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}.
-			Powered by
-			<a href="https://pages.github.com" rel="nofollow">GitHub Pages</a>
-			&amp
-			<a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>.
-		</div>
-
-		<a href="#" class="fa fa-facebook"></a>
+<!-- end of footer element -->
+	</div>
 
 <!-- end of footer -->
 </div>

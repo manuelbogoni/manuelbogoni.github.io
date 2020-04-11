@@ -1,0 +1,29 @@
+---
+layout: default
+title: Posts
+---
+
+<!-- page container -->
+<div class="container">
+
+<!-- title -->
+	<h1>Posts</h1>
+
+<!-- loop over posts -->
+	<ul class="posts">
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
+
+	<!-- loop over posts -->
+	<div class="post-box">
+		  {% for post in site.posts %}
+			<div class="post-item">
+				<span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+			</div>
+		  {% endfor %}
+			</div>
+
+<!-- end of page container -->
+</div>
