@@ -97,7 +97,7 @@ html {
 
 // post item
 .post-item{
-  @include flex-shrink(1) // to prevent shrink
+  @include flex-shrink(1); // to prevent shrink
   min-width: 150px;
   min-height: 150px;
   margin: 10px;
