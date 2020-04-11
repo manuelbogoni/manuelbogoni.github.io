@@ -185,7 +185,7 @@ a {
 .about-me-column{
   -webkit-flex: 1;
   @include flex-grow(1);
-  @include flex-shrink(1)
+  @include flex-shrink(1);
   padding: 1rem;
   margin: 1rem;
   border: 2px solid black;
@@ -195,7 +195,7 @@ a {
 .about-me-left-column{
   -webkit-flex: 1;
   @include flex-grow(1);
-  @include flex-shrink(1)
+  @include flex-shrink(1);
   padding: 1rem;
   margin: 1rem;
   border: 2px solid black;
@@ -207,7 +207,7 @@ a {
   -webkit-flex: 1;
   @include flexbox; // to set the element as container
   @include flex-grow(1);
-  @include flex-shrink(1)
+  @include flex-shrink(1);
   margin: 1rem 0rem;
   padding-top: 1rem;
   border: 2px solid black;
