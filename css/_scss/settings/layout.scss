@@ -23,7 +23,12 @@ body{
 // navigation bar and footer are upper and lower flexbox containers
 #navigation-bar, #footer{
   @include flexbox; // to set the element as container
+
   @include flex-direction(row); // inner element sorting
+  @include media("<=tablet") {
+    @include flex-direction(column);
+  }
+
   @include flex-shrink(0); // to prevent shrink
 }
 

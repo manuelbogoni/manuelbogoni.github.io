@@ -9,18 +9,16 @@
 @import "database/floats";
 @import "database/font_sizes";
 @import "database/font_weights";
+@import "database/media_screens";
 @import "database/social_icons";
 
 // variables
 @import "variables";
 
-// general layout
+// site settings
 @import "settings/layout";
-
-// colors
 @import "settings/background_colors";
 @import "settings/text_colors";
 @import "specific_settings";
 
 // visualization for tablet and phone screens
-@import "database/media_screens";
