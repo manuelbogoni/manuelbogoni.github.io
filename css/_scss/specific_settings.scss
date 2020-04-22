@@ -19,9 +19,27 @@
 //background-color: red;
 //}
 //}
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar1 {
+  position: fixed;
+  top: 250px;
+	height: 100px;
+	line-height: 100px;
+	background-color: red;
+	color: white;
+	border-radius: 0 50px 50px 0;
+	min-width: 100px;
+	vertical-align: middle;
+	transition-duration: 0.2s;
+
+	&:hover {
+	min-width: 150px;
+	background-color: orange;
+	}
+}
 
 
-
+//vhtml{margin: auto;}
 
 
 //----------------------------------------------------------------------
@@ -116,16 +134,6 @@ html {
   border: 2px solid black;
   border-radius: 25px;
 }
-
-// post item
-.skill-item{
-  max-width: 400px;
-  //margin: 10px;
-  border: 2px solid black;
-  border-radius: 25px;
-  padding: 10px;
-}
-
 
 
 
