@@ -1,7 +1,7 @@
 # --- GENERAL WEBSITE OPTIONS --- #
 
 # name of website
-title: "My website"
+title: "My websiteeeeeee"
 
 # how to display the link to the website in the footer
 url-pretty: "MyWebsite.com"
@@ -30,6 +30,7 @@ date_format: "%-d %b %Y"
 
 # --- NAVIGATION BAR --- #
 navigation:
+  en:
   - url   : "/"
     title : "home"
   - url   : "/about"
@@ -38,6 +39,15 @@ navigation:
     title : "blog"
   - url   : "/contact"
     title : "contact"
+  it:
+  - url   : "/"
+    title : "home"
+  - url   : "/chisono"
+    title : "Chi sono"
+  - url   : "/blog"
+    title : "Cosa faccio"
+  - url   : "/contact"
+    title : "Contatti"
 
 # --- PERSONAL DATA --- #
 author:
