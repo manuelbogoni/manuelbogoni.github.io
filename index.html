@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Manuel Bogoni — Fotografo a Padova, Colli Euganei e Vicenza</title>
+  <meta name="description" content="Manuel Bogoni, fotografo professionista a Padova, Colli Euganei e Vicenza. Servizi di ritratto, fotografia di eventi e paesaggio in tutto il Veneto.">
+  <meta name="author" content="Manuel Bogoni">
+  <meta name="keywords" content="fotografo Padova, fotografo Colli Euganei, fotografo eventi Padova, fotografo eventi Vicenza, fotografo Veneto, servizio fotografico Padova">
+  <link rel="canonical" href="https://www.manuelbogoni.it/">
+
+  <!-- Geo -->
+  <meta name="geo.region" content="IT-34">
+  <meta name="geo.placename" content="Padova, Vicenza, Colli Euganei">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:title" content="Manuel Bogoni — Fotografo a Padova, Colli Euganei e Vicenza">
+  <meta property="og:description" content="Fotografo professionista per ritratti, eventi e paesaggio a Padova, Colli Euganei e Vicenza.">
+  <meta property="og:url" content="https://www.manuelbogoni.it/">
+  <meta property="og:image" content="https://www.manuelbogoni.it/images/portrait-1.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Manuel Bogoni — Fotografo a Padova, Colli Euganei e Vicenza">
+  <meta name="twitter:description" content="Fotografo professionista per ritratti, eventi e paesaggio in Veneto.">
+  <meta name="twitter:image" content="https://www.manuelbogoni.it/images/portrait-1.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dati strutturati: attività locale (aiuta la SEO locale) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://www.manuelbogoni.it/#business",
+    "name": "Manuel Bogoni Fotografo",
+    "image": "https://www.manuelbogoni.it/images/portrait-1.jpg",
+    "url": "https://www.manuelbogoni.it/",
+    "email": "info@manuelbogoni.it",
+    "description": "Fotografo professionista a Padova, Colli Euganei e Vicenza. Ritratto, eventi e paesaggio.",
+    "priceRange": "€€",
+    "address": {
+      "@type": "PostalAddress",
+      "addressRegion": "Veneto",
+      "addressCountry": "IT"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Padova" },
+      { "@type": "City", "name": "Vicenza" },
+      { "@type": "Place", "name": "Colli Euganei" }
+    ],
+    "knowsAbout": ["Fotografia di ritratto", "Fotografia di eventi", "Fotografia di paesaggio"],
+    "sameAs": [
+      "https://instagram.com/",
+      "https://linkedin.com/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Barra superiore mobile -->
+  <div class="topbar">
+    <span class="topbar__name">Manuel Bogoni</span>
+    <button class="topbar__toggle" id="menuToggle" aria-label="Apri il menu" aria-expanded="false" aria-controls="sidebar">
+      <span></span>
+    </button>
+  </div>
+
+  <!-- Sidebar contatti -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__inner">
+      <header class="sidebar__brand">
+        <h1 class="sidebar__name">Manuel<br>Bogoni</h1>
+        <p class="sidebar__role">Fotografo</p>
+      </header>
+
+      <nav class="sidebar__nav" aria-label="Navigazione principale">
+        <a href="#intro" data-nav>Home</a>
+        <a href="#about" data-nav>Chi sono</a>
+        <a href="#portrait" data-nav>Ritratto</a>
+        <a href="#events" data-nav>Eventi</a>
+        <a href="#landscape" data-nav>Paesaggio</a>
+        <a href="#contact" data-nav>Contatti</a>
+      </nav>
+
+      <div class="sidebar__contact" id="contact">
+        <h2 class="sidebar__label">Contatti</h2>
+        <ul>
+          <li><a href="mailto:info@manuelbogoni.it">info@manuelbogoni.it</a></li>
+          <li><a href="tel:+390000000000">+39 000 000 0000</a></li>
+          <li>Padova · Colli Euganei · Vicenza</li>
+        </ul>
+
+        <h2 class="sidebar__label">Social</h2>
+        <ul>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <footer class="sidebar__footer">
+        <p>&copy; <span id="year"></span> Manuel Bogoni</p>
+        <p>Fotografo · Veneto</p>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- Contenuto -->
+  <main class="content">
+
+    <section class="intro" id="intro">
+      <p class="intro__lead">Fotografia di ritratto, eventi e paesaggio in Veneto.</p>
+      <p class="intro__sub">Racconto storie attraverso la luce, tra Padova, i Colli Euganei e Vicenza. Servizi su commissione per privati, aziende ed eventi.</p>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section__header">
+        <h2 class="section__title">Chi sono</h2>
+      </div>
+      <div class="feature">
+        <div class="feature__media">
+          <img src="images/about.jpg" alt="Ritratto del fotografo Manuel Bogoni" loading="lazy" width="1000" height="1250">
+        </div>
+        <div class="section__text">
+          <p>Sono Manuel Bogoni, fotografo professionista attivo a Padova, sui Colli Euganei e a Vicenza. Da oltre dieci anni catturo momenti autentici, dal ritratto in studio al reportage di eventi.</p>
+          <p>Ogni scatto nasce dall'attenzione al dettaglio e dalla ricerca di un'estetica essenziale ed elegante. Lavoro in tutto il Veneto, con un approccio discreto e su misura per ogni cliente.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portrait">
+      <div class="section__header">
+        <h2 class="section__title">Ritratto</h2>
+        <div class="section__text">
+          <p>Ritratti in studio e in esterna a Padova e dintorni: persone, famiglie e ritrattistica aziendale, sempre con luce curata e naturalezza.</p>
+        </div>
+      </div>
+      <div class="gallery" data-gallery>
+        <button class="gallery__item" data-src="images/portrait-1.jpg"><img src="images/portrait-1.jpg" alt="Servizio fotografico di ritratto a Padova — esempio 1" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/portrait-2.jpg"><img src="images/portrait-2.jpg" alt="Ritratto in studio Veneto — esempio 2" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/portrait-3.jpg"><img src="images/portrait-3.jpg" alt="Ritratto fotografico professionale — esempio 3" loading="lazy" width="1000" height="1250"></button>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="section__header">
+        <h2 class="section__title">Eventi</h2>
+        <div class="section__text">
+          <p>Fotografia di eventi a Padova, sui Colli Euganei e a Vicenza: cerimonie, eventi aziendali e ricorrenze raccontate come una storia visiva coerente.</p>
+        </div>
+      </div>
+      <div class="gallery" data-gallery>
+        <button class="gallery__item" data-src="images/events-1.jpg"><img src="images/events-1.jpg" alt="Fotografo eventi Padova — esempio 1" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/events-2.jpg"><img src="images/events-2.jpg" alt="Fotografo eventi Vicenza — esempio 2" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/events-3.jpg"><img src="images/events-3.jpg" alt="Reportage di evento Colli Euganei — esempio 3" loading="lazy" width="1000" height="1250"></button>
+      </div>
+    </section>
+
+    <section class="section" id="landscape">
+      <div class="section__header">
+        <h2 class="section__title">Paesaggio</h2>
+        <div class="section__text">
+          <p>Paesaggi del Veneto, dai Colli Euganei alle colline vicentine: la luce del territorio in immagini pensate per stampa e spazi.</p>
+        </div>
+      </div>
+      <div class="gallery" data-gallery>
+        <button class="gallery__item" data-src="images/landscape-1.jpg"><img src="images/landscape-1.jpg" alt="Paesaggio Colli Euganei — esempio 1" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/landscape-2.jpg"><img src="images/landscape-2.jpg" alt="Fotografia di paesaggio Veneto — esempio 2" loading="lazy" width="1000" height="1250"></button>
+        <button class="gallery__item" data-src="images/landscape-3.jpg"><img src="images/landscape-3.jpg" alt="Paesaggio collinare Vicenza — esempio 3" loading="lazy" width="1000" height="1250"></button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualizzatore immagini">
+    <button class="lightbox__close" id="lbClose" aria-label="Chiudi">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Immagine precedente">&#8249;</button>
+    <img class="lightbox__img" id="lbImg" src="" alt="">
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Immagine successiva">&#8250;</button>
+    <div class="lightbox__counter" id="lbCounter"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
