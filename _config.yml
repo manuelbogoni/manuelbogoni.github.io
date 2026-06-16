@@ -1,0 +1,60 @@
+# ============================================================
+#  Dati del sito — modifica QUI tutti i contenuti
+# ============================================================
+
+# --- Generali ---
+title: "Manuel Bogoni"
+role: "Fotografo"
+description: "Manuel Bogoni, fotografo professionista. Ritratto, reportage, paesaggio."
+url: "https://www.manuelbogoni.it"
+
+# --- Contatti (lascia vuoto "" per nascondere una voce) ---
+contact:
+  email: "info@manuelbogoni.it"
+  phone: "+39 000 000 0000"
+  location: "Thiene, Veneto, IT"
+
+# --- Social (lascia vuoto "" per nascondere) ---
+social:
+  - name: "Instagram"
+    url: "https://instagram.com/"
+  - name: "LinkedIn"
+    url: "https://linkedin.com/"
+
+# --- Sezioni della pagina ---
+# image: nome del file dentro la cartella images/
+# paragraphs: una o più righe di testo
+sections:
+  - id: "about"
+    title: "Chi sono"
+    image: "about.jpg"
+    reverse: false
+    paragraphs:
+      - "Racconto storie attraverso la luce. Da oltre dieci anni catturo momenti autentici, dal ritratto in studio al reportage di viaggio."
+      - "Ogni scatto nasce dall'attenzione al dettaglio e dalla ricerca di un'estetica essenziale ed elegante."
+
+  - id: "work"
+    title: "Lavori"
+    image: "work.jpg"
+    reverse: true
+    paragraphs:
+      - "Una selezione di progetti recenti tra ritrattistica, eventi e paesaggio. Ogni serie è pensata come un racconto visivo coerente."
+      - "Disponibile per servizi su commissione in tutta Italia."
+
+  - id: "approach"
+    title: "Approccio"
+    image: "approach.jpg"
+    reverse: false
+    paragraphs:
+      - "Un metodo discreto e collaborativo: ascolto le esigenze del cliente e costruisco insieme la visione finale dell'immagine."
+      - "Qualità, puntualità e cura della post-produzione in ogni consegna."
+
+# ============================================================
+#  Impostazioni Jekyll — di norma non serve toccarle
+# ============================================================
+sass:
+  style: compressed
+  sass_dir: _sass
+
+exclude:
+  - README.md
