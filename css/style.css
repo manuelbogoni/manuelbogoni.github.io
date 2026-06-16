@@ -43,11 +43,16 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 3rem 2.5rem;
+  padding: 2.5rem 2.5rem;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.sidebar__inner::-webkit-scrollbar {
+  display: none;
 }
 .sidebar__brand {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 .sidebar__name {
   font-family: "Cormorant Garamond", Georgia, serif;
@@ -68,7 +73,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
-  margin-bottom: 2.2rem;
+  margin-bottom: 1.8rem;
 }
 .sidebar__nav a {
   font-size: 0.95rem;
