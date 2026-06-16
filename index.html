@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manuel Bogoni — Fotografo</title>
+  <meta name="description" content="Manuel Bogoni, fotografo professionista. Ritratto, reportage, paesaggio.">
+  <meta name="author" content="Manuel Bogoni">
+  <link rel="canonical" href="https://www.manuelbogoni.it/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Manuel Bogoni — Fotografo">
+  <meta property="og:description" content="Fotografo professionista. Ritratto, reportage, paesaggio.">
+  <meta property="og:url" content="https://www.manuelbogoni.it/">
+  <meta property="og:image" content="https://www.manuelbogoni.it/images/about.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Barra fissa di contatto (sinistra) -->
+  <aside class="sidebar">
+    <div class="sidebar__inner">
+      <header class="sidebar__brand">
+        <h1 class="sidebar__name">Manuel<br>Bogoni</h1>
+        <p class="sidebar__role">Fotografo</p>
+      </header>
+
+      <nav class="sidebar__nav">
+        <a href="#about">Chi sono</a>
+        <a href="#work">Lavori</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+
+      <div class="sidebar__contact" id="contact">
+        <h2 class="sidebar__label">Contatti</h2>
+        <ul>
+          <li><a href="mailto:info@dominio.it">info@dominio.it</a></li>
+          <li><a href="tel:+390000000000">+39 000 000 0000</a></li>
+          <li>Thiene, Veneto, IT</li>
+        </ul>
+
+        <h2 class="sidebar__label">Social</h2>
+        <ul>
+          <li><a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+
+      <footer class="sidebar__footer">
+        <p>&copy; <span id="year"></span> Manuel Bogoni</p>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- Contenuto principale (destra) -->
+  <main class="content">
+
+    <section class="section" id="about">
+      <div class="section__media">
+        <img src="images/about.jpg" alt="Ritratto di Manuel Bogoni" loading="lazy">
+      </div>
+      <div class="section__text">
+        <h2 class="section__title">Chi sono</h2>
+        <p>Racconto storie attraverso la luce. Da oltre dieci anni catturo momenti
+          autentici, dal ritratto in studio al reportage di viaggio.</p>
+        <p>Ogni scatto nasce dall'attenzione al dettaglio e dalla ricerca di
+          un'estetica essenziale ed elegante.</p>
+      </div>
+    </section>
+
+    <section class="section section--reverse" id="work">
+      <div class="section__media">
+        <img src="images/work.jpg" alt="Esempio di lavoro fotografico" loading="lazy">
+      </div>
+      <div class="section__text">
+        <h2 class="section__title">Lavori</h2>
+        <p>Una selezione di progetti recenti tra ritrattistica, eventi e paesaggio.
+          Ogni serie è pensata come un racconto visivo coerente.</p>
+        <p>Disponibile per servizi su commissione in tutta Italia.</p>
+      </div>
+    </section>
+
+    <section class="section" id="approach">
+      <div class="section__media">
+        <img src="images/approach.jpg" alt="Dietro le quinte di uno scatto" loading="lazy">
+      </div>
+      <div class="section__text">
+        <h2 class="section__title">Approccio</h2>
+        <p>Un metodo discreto e collaborativo: ascolto le esigenze del cliente
+          e costruisco insieme la visione finale dell'immagine.</p>
+        <p>Qualità, puntualità e cura della post-produzione in ogni consegna.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
