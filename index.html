@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<!-- Barra fissa di contatto (sinistra) -->
+<aside class="sidebar">
+  <div class="sidebar__inner">
+    <header class="sidebar__brand">
+      <h1 class="sidebar__name">{{ site.title }}</h1>
+      <p class="sidebar__role">{{ site.role }}</p>
+    </header>
+
+    <nav class="sidebar__nav">
+      {% for section in site.sections %}
+      <a href="#{{ section.id }}">{{ section.title }}</a>
+      {% endfor %}
+    </nav>
+
+    <div class="sidebar__contact">
+      <h2 class="sidebar__label">Contatti</h2>
+      <ul>
+        {% if site.contact.email %}<li><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></li>{% endif %}
+        {% if site.contact.phone %}<li><a href="tel:{{ site.contact.phone | replace: ' ', '' }}">{{ site.contact.phone }}</a></li>{% endif %}
+        {% if site.contact.location %}<li>{{ site.contact.location }}</li>{% endif %}
+      </ul>
+
+      {% if site.social.size > 0 %}
+      <h2 class="sidebar__label">Social</h2>
+      <ul>
+        {% for link in site.social %}
+        <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a></li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+
+    <footer class="sidebar__footer">
+      <p>&copy; <span id="year"></span> {{ site.title }}</p>
+    </footer>
+  </div>
+</aside>
+
+<!-- Contenuto principale (destra) -->
+<main class="content">
+  {% for section in site.sections %}
+  <section class="section{% if section.reverse %} section--reverse{% endif %}" id="{{ section.id }}">
+    <div class="section__media">
+      <img src="{{ '/images/' | append: section.image | relative_url }}" alt="{{ section.title }} — {{ site.title }}" loading="lazy">
+    </div>
+    <div class="section__text">
+      <h2 class="section__title">{{ section.title }}</h2>
+      {% for p in section.paragraphs %}
+      <p>{{ p }}</p>
+      {% endfor %}
+    </div>
+  </section>
+  {% endfor %}
+</main>
